@@ -53,11 +53,6 @@ int fillCoordinates(int sizeCoordA, float coordinates[][2])
     return numOfCoordinates;
 }
 
-/*float getManhattanDistance(float point[2], float targetPoint[2])
-{
-    return abs(targetPoint[0] - point[0]) + abs(targetPoint[1] - point[1]);
-}*/
-
 void swapCoordinatesByManhattenDistance(int numOfCoordinates, float array[][2])
 {
     float distanceBetweenPointsByManhatten[numOfCoordinates];
