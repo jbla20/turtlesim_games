@@ -137,41 +137,5 @@ int main(int argc, char *argv[])
         loop_rate.sleep();
     }
 
-    /* Exercise 2
-  pen_srv.request.off = true;
-  pen_client.call(pen_srv);
-  srv.request.x = startX;
-  srv.request.y = startY;
-  teleport_client.call(srv);
-  pen_srv.request.off = false;
-  pen_srv.request.width = 2;
-  pen_client.call(pen_srv);
-  loop_rate.sleep();
-
-  int sizeCoordA = 5;
-  int sizeCoordB = 2;
-  float coordinates[sizeCoordA][sizeCoordB] = {{startX+5, startY},{startX+5, startY+4},{startX+2, startY+4},{startX,startY+6},{startX, startY}};
-
-  for(int i=0; i<sizeCoordA; i++){
-    srv.request.x = coordinates[i][0];
-    srv.request.y = coordinates[i][1];
-    teleport_client.call(srv);
-    loop_rate.sleep();
-  }
-
-  */
-
-    // Exercise 1
-    /*int sizeCoordA = 5;
-    int sizeCoordB = 2;
-
-    for (int i = 0; i < sizeCoordA; i++)
-    {
-        srv.request.x = fillCoordinates(sizeCoordA, coordinates);
-        srv.request.y = fillCoordinates(sizeCoordA, coordinates);
-        teleport_client.call(srv);
-        loop_rate.sleep();
-    }
-*/
     return 0;
 }
