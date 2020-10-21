@@ -136,6 +136,7 @@ add_executable(make_box src/make_box.cpp)
 add_executable(vacuum src/vacuum.cpp)
 add_executable(move_turtle src/move_turtle.cpp)
 add_executable(draw_turtle src/draw_turtle.cpp)
+add_executable(sorting src/sorting.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -168,6 +169,10 @@ target_link_libraries(draw_turtle
   ${catkin_LIBRARIES}
 )
 
+target_link_libraries(sorting
+  ${catkin_LIBRARIES}
+)
+
 #############
 ## Install ##
 #############
@@ -184,7 +189,7 @@ target_link_libraries(draw_turtle
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
-install(TARGETS kill_turtles make_box vacuum move_turtle draw_turtle
+install(TARGETS kill_turtles make_box vacuum move_turtle draw_turtle sorting
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
